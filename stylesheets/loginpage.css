@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:#1c1c1c;
+}
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c1c1c;
+    padding: 20px;
+    height: 145px;
+    color: #ffffff;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    flex-grow: 1; /* Center the logo and text */
+}
+
+/* College logo and name */
+.logo-container img {
+    height: 100px; /* Logo size */
+    margin-left: 150px;
+}
+
+.logo-container h1 {
+    font-size: 36px;
+    color: #ffffff; /* White color for college name */
+    margin: 0;
+}
+
+/* Contact info */
+.contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Navbar buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    padding: 10px 0;
+}
+
+.buttons a {
+    background-color: #333333;
+}
+
+.button {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #55e463;
+}
+
+/* img{
+    position: absolute;
+    width: auto;
+    height: 800px;
+    top: 0;
+     padding-left: 30px;
+    object-fit: cover;
+    z-index: -1;
+    display: flex;
+} */
+
+.container{
+    width: 400px;
+    color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    background: #3b3a3ab3;
+    margin: 20px auto;
+   
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 30px 0;
+    color: white;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: -10px 0 15px;
+}
+
+.remember a{
+    border-bottom: 2px solid transparent;
+    color: #fff;
+}
+
+.remember a:hover{
+    /* border-bottom: 2px solid #fff; */
+    color: #207640;
+}
+
+.btn{
+    width: 100%;
+    height: 40px;
+    background: #55e643;
+    color: #000;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #55e463;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 1s;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background: transparent;
+    border: 2px solid #207640;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #207640;
+}
+
+.register{
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register p a{
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+}
+
+.register p a:hover{
+    color: #207640;
+}
+h1{
+    text-align: center;
+}
+label {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #ccc;
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* Style the custom select */
+.custom-select {
+    width: 302px;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.selected {
+    padding: 10px;
+    width:106%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3b3a3a;
+}
+
+.options {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 320px;
+    border: 1px solid #ccc;
+    background-color: #3b3a3a;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+/* Each option styling */
+.option {
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.option:hover {
+    background-color: #207640;
+}
+
+.show {
+    display: block; /* Makes the dropdown visible when .show is added */
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: #333333;
+}
+
+/* Dropdown toggle */
+.dropdown-toggle {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: #1c1c1c;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #55e463;
+}
+
+/* Show the dropdown menu on click */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.footer {
+    background-color: #207640;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    background-color: #207640;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    flex: 1;
+    text-align: left;
+    background-color: #207640;
+}
+
+.footer-links h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: #207640;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #207640;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    background-color: #207640;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background-color: #207640;
+}
+
+.footer-links a:hover {
+    color: #55e463; /* Accent color on hover */
+}
+
+.footer-map {
+    flex: 1;
+    text-align: right;
+    background-color: #207640;
+}
+
+.footer-map h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: #207640;
+}
+
+.footer-map img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    background-color: #207640;
+}
