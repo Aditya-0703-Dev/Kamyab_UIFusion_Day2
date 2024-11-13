@@ -45,7 +45,13 @@
         <a href="./entrepreneur.html">
             <button class="button">Entrepreneurship</button>
         </a>
-        <button class="button">Login</button>
+        <div class="dropdown">
+            <button class="button" onclick="toggleDropdown()">Login</button>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="./loginpage.html">Student Login</a>
+                <a href="./admin.html">Faculty Login</a>
+            </div>
+        </div>
     </div>
 
     <!-- Entrepreneurship Section -->
@@ -126,5 +132,24 @@
         </div>
     </div>
 </footer>
+<script>
+    // Function to toggle dropdown menu visibility
+    function toggleDropdown() {
+        document.getElementById("dropdownMenu").classList.toggle("show");
+    }
+
+    // Close dropdown if clicked outside
+    window.onclick = function(event) {
+        if (!event.target.matches('.button')) {
+            var dropdowns = document.getElementsByClassName("dropdown-menu");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
 </body>
 </html>
