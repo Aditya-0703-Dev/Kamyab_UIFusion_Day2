@@ -35,7 +35,8 @@
 
 /* College logo and name */
 .logo-container img {
-    height: 70px; /* Logo size */
+    height: 100px; /* Logo size */
+    margin-left: 150px;
 }
 
 .logo-container h1 {
@@ -134,6 +135,7 @@
         .card p {
             color: white;
             font-size: 14px;
+            margin-bottom: 10px;
         }
         .learn-more-button {
     align-self: flex-start;
@@ -154,7 +156,76 @@
     background-color: #207640;
     color: #ffffff;
   }
-        
+        /* Footer Styling */
+.footer {
+    background-color: #207640;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    background-color: #207640;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    flex: 1;
+    text-align: left;
+    background-color: #207640;
+}
+
+.footer-links h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: #207640;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #207640;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    background-color: #207640;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background-color: #207640;
+}
+
+.footer-links a:hover {
+    color: #55e463; /* Accent color on hover */
+}
+
+.footer-map {
+    flex: 1;
+    text-align: right;
+    background-color: #207640;
+}
+
+.footer-map h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: #207640;
+}
+
+.footer-map img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    background-color: #207640;
+}
     </style>
 </head>
 <body>
@@ -164,7 +235,7 @@
             <a href="./index.html">
                 <img src="https://hcesonepat.org/hces/wp-content/themes/Silent/assets/logo/11.png" alt="College Logo">
             </a>
-            <h1>HINDU COLLEGE OF ENGINEERING</h1>
+            <!-- <h1>HINDU COLLEGE OF ENGINEERING</h1> -->
         </div>
         <div class="contact-info">
             <a href="tel:+1234567890">
@@ -179,9 +250,15 @@
         <a href="./index.html">
             <button class="button">Home</button>
         </a>
-        <button class="button">Institution</button>
-        <button class="button">Downloads</button>
-        <button class="button">Datesheet</button>
+        <a href="./under_construction.html">
+            <button class="button">Institution</button>
+        </a>
+        <a href="./under_construction.html">
+            <button class="button">Downloads</button>
+        </a>
+        <a href="./under_construction.html">
+            <button class="button">Datesheet</button>
+        </a>
         <a href="./syllabus.html">
             <button class="button">Programmes</button>
         </a>
@@ -223,7 +300,30 @@
     </div>
 
 
-    
+        <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- Important Links -->
+        <div class="footer-links">
+            <h3>Important Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Map Section -->
+        <div class="footer-map">
+            <h3>Find Us Here</h3>
+            <img src="https://hcesonepat.org/hce/wp-content/uploads/2016/06/image-hce.jpg" alt="College Map">
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

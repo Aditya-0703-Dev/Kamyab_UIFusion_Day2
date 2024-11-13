@@ -20,7 +20,7 @@ h1{
     justify-content: space-between;
     background-color: #1c1c1c;
     padding: 20px;
-    height: 100px;
+    height: 145px;
     color: #ffffff;
 }
 
@@ -34,7 +34,8 @@ h1{
 
 /* College logo and name */
 .logo-container img {
-    height: 70px; /* Logo size */
+    height: 100px; /* Logo size */
+    margin-left: 150px;
 }
 
 .logo-container h1 {

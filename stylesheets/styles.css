@@ -25,7 +25,8 @@ body {
 
 /* College logo and name */
 .logo-container img {
-    height: 70px; /* Logo size */
+    height: 100px; /* Logo size */
+    margin-left: 150px;
 }
 
 .logo-container h1 {
@@ -303,3 +304,73 @@ body {
     color: #207640;
   }
   
+  /* Footer Styling */
+.footer {
+    background-color: #207640;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    background-color: #207640;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    flex: 1;
+    text-align: left;
+    background-color: #207640;
+}
+
+.footer-links h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: #207640;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #207640;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    background-color: #207640;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background-color: #207640;
+}
+
+.footer-links a:hover {
+    color: #55e463; /* Accent color on hover */
+}
+
+.footer-map {
+    flex: 1;
+    text-align: right;
+    background-color: #207640;
+}
+
+.footer-map h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: #207640;
+}
+
+.footer-map img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    background-color: #207640;
+}
