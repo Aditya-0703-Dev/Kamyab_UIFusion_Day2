@@ -291,7 +291,52 @@ h1 {
 	border-radius: 8px;
 	background-color: #207640;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: #333333;
+}
 
+/* Dropdown toggle */
+.dropdown-toggle {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: #1c1c1c;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #55e463;
+}
+
+/* Show the dropdown menu on click */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 /* Sticky Button */
 .sticky-button {
     position: fixed;
