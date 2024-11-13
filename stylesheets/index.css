@@ -58,6 +58,10 @@ h1{
     padding: 10px 0;
 }
 
+.buttons a {
+    background-color: #333333;
+}
+
 .button {
     background-color: transparent;
     color: #ffffff;
