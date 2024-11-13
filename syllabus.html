@@ -1,329 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Programs Page</title>
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-            background-color: #1c1c1c;
-        }
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Welcome to HCE</title>
+		<link rel="stylesheet" href="./stylesheets/syllabus.css" />
+	</head>
+	<body>
+		<!-- Navbar -->
+		<div class="navbar">
+			<div class="logo-container">
+				<a href="./index.html">
+					<img
+						src="https://hcesonepat.org/hces/wp-content/themes/Silent/assets/logo/11.png"
+						alt="College Logo"
+					/>
+				</a>
+				<!-- <h1>HINDU COLLEGE OF ENGINEERING</h1> -->
+			</div>
+			<div class="contact-info">
+				<a href="tel:+1234567890">
+					☎️
+					<span>+1 234 567 890</span>
+				</a>
+			</div>
+		</div>
 
-        /* Navbar styling */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #1c1c1c;
-    padding: 20px;
-    height: 100px;
-    color: #ffffff;
-}
+		<!-- Links Section -->
+		<div class="buttons">
+			<a href="./index.html">
+				<button class="button">Home</button>
+			</a>
+			<a href="./under_construction.html">
+				<button class="button">Institution</button>
+			</a>
+			<a href="./under_construction.html">
+				<button class="button">Downloads</button>
+			</a>
+			<a href="./under_construction.html">
+				<button class="button">Datesheet</button>
+			</a>
+			<a href="./syllabus.html">
+				<button class="button">Programmes</button>
+			</a>
+			<a href="./entrepreneur.html">
+				<button class="button">Entrepreneurship</button>
+			</a>
+			<button class="button">Login</button>
+		</div>
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    justify-content: center;
-    flex-grow: 1; /* Center the logo and text */
-}
+		<!-- Main Content with Cards for Branches -->
+		<div class="content">
+			<!-- Card 1: CSE -->
+			<div class="card">
+				<h3>Computer Science Engineering (CSE)</h3>
+				<p>
+					Learn about the latest in software development, algorithms, data
+					structures, and more in our CSE program.
+				</p>
+				<button class="learn-more-button">View</button>
+			</div>
 
-/* College logo and name */
-.logo-container img {
-    height: 100px; /* Logo size */
-    margin-left: 150px;
-}
+			<!-- Card 2: ECE -->
+			<div class="card">
+				<h3>Electronics and Communication Engineering (ECE)</h3>
+				<p>
+					Explore communication systems, embedded systems, and VLSI design in
+					our ECE program.
+				</p>
+				<button class="learn-more-button">View</button>
+			</div>
 
-.logo-container h1 {
-    font-size: 36px;
-    color: #ffffff; /* White color for college name */
-    margin: 0;
-}
+			<!-- Card 3: ME -->
+			<div class="card">
+				<h3>Mechanical Engineering (ME)</h3>
+				<p>
+					Get hands-on experience in manufacturing, thermodynamics, and robotics
+					with our ME program.
+				</p>
+				<button class="learn-more-button">View</button>
+			</div>
 
-/* Contact info */
-.contact-info a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-}
+			<!-- Card 4: CE -->
+			<div class="card">
+				<h3>Civil Engineering (CE)</h3>
+				<p>
+					Learn structural engineering, environmental engineering, and
+					sustainable construction in our CE program.
+				</p>
+				<button class="learn-more-button">View</button>
+			</div>
+		</div>
 
-/* Navbar buttons */
-.buttons {
-    display: flex;
-    justify-content: center;
-    background-color: #333333;
-    padding: 10px 0;
-}
+		<!-- Footer Section -->
+		<footer class="footer">
+			<div class="footer-content">
+				<!-- Important Links -->
+				<div class="footer-links">
+					<h3>Important Links</h3>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Programs</a></li>
+						<li><a href="#">Admissions</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</div>
 
-.buttons a {
-    background-color: #333333;
-}
+				<!-- Map Section -->
+				<div class="footer-map">
+					<h3>Find Us Here</h3>
+					<img
+						src="https://hcesonepat.org/hce/wp-content/uploads/2016/06/image-hce.jpg"
+						alt="College Map"
+					/>
+				</div>
+			</div>
+		</footer>
 
-.button {
-    background-color: transparent;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-.button:hover {
-    color: #55e463;
-}
-
-        /* Dropdown Menu Styling */
-        .dropdown {
-            position: absolute;
-            top: 50px; /* Adjusts below the navbar */
-            display: none; /* Initially hidden */
-            background-color: #55e463;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 10px 0;
-        }
-
-        /* Dropdown Items */
-        .dropdown a {
-            display: block;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-        }
-
-        .dropdown a:hover {
-            background-color: #003060;
-        }
-
-        /* Main Body Content */
-        .content {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            padding: 40px;
-        }
-
-        /* Card Styling */
-        .card {
-            background-color: #1c1c1c;
-            width: 250px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s;
-        
-            justify-content: space-between;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px #207640;
-        }
-
-        .card h3 {
-            color: #55e463;
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            color: white;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-        .learn-more-button {
-    align-self: flex-start;
-    padding: 8px 15px;
-    background-color: #55e463;
-    color: #1c1c1c;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    justify-content: space-between;
-    align-items: left;
-    display: flex;
-  }
-  
-  .learn-more-button:hover {
-    background-color: #207640;
-    color: #ffffff;
-  }
-        /* Footer Styling */
-.footer {
-    background-color: #207640;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    background-color: #207640;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-links {
-    flex: 1;
-    text-align: left;
-    background-color: #207640;
-}
-
-.footer-links h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    background-color: #207640;
-}
-
-.footer-links ul {
-    list-style-type: none;
-    padding: 0;
-    background-color: #207640;
-}
-
-.footer-links li {
-    margin-bottom: 10px;
-    background-color: #207640;
-}
-
-.footer-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    background-color: #207640;
-}
-
-.footer-links a:hover {
-    color: #55e463; /* Accent color on hover */
-}
-
-.footer-map {
-    flex: 1;
-    text-align: right;
-    background-color: #207640;
-}
-
-.footer-map h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    background-color: #207640;
-}
-
-.footer-map img {
-    max-width: 100%;
-    width: 400px;
-    height: auto;
-    border-radius: 8px;
-    background-color: #207640;
-}
-    </style>
-</head>
-<body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="logo-container">
-            <a href="./index.html">
-                <img src="https://hcesonepat.org/hces/wp-content/themes/Silent/assets/logo/11.png" alt="College Logo">
-            </a>
-            <!-- <h1>HINDU COLLEGE OF ENGINEERING</h1> -->
-        </div>
-        <div class="contact-info">
-            <a href="tel:+1234567890">
-                ☎️
-                <span>+1 234 567 890</span>
-            </a>
-        </div>
-    </div>
-
-    <!-- Links Section -->
-    <div class="buttons">
-        <a href="./index.html">
-            <button class="button">Home</button>
-        </a>
-        <a href="./under_construction.html">
-            <button class="button">Institution</button>
-        </a>
-        <a href="./under_construction.html">
-            <button class="button">Downloads</button>
-        </a>
-        <a href="./under_construction.html">
-            <button class="button">Datesheet</button>
-        </a>
-        <a href="./syllabus.html">
-            <button class="button">Programmes</button>
-        </a>
-        <a href="./entrepreneur.html">
-            <button class="button">Entrepreneurship</button>
-        </a>
-        <button class="button">Login</button>
-    </div>
-
-    <!-- Main Content with Cards for Branches -->
-    <div class="content">
-        <!-- Card 1: CSE -->
-        <div class="card">
-            <h3>Computer Science Engineering (CSE)</h3>
-            <p>Learn about the latest in software development, algorithms, data structures, and more in our CSE program.</p>
-            <button class="learn-more-button">View</button>
-        </div>
-
-        <!-- Card 2: ECE -->
-        <div class="card">
-            <h3>Electronics and Communication Engineering (ECE)</h3>
-            <p>Explore communication systems, embedded systems, and VLSI design in our ECE program.</p>
-            <button class="learn-more-button">View</button>
-        </div>
-
-        <!-- Card 3: ME -->
-        <div class="card">
-            <h3>Mechanical Engineering (ME)</h3>
-            <p>Get hands-on experience in manufacturing, thermodynamics, and robotics with our ME program.</p>
-            <button class="learn-more-button">View</button>
-        </div>
-
-        <!-- Card 4: CE -->
-        <div class="card">
-            <h3>Civil Engineering (CE)</h3>
-            <p>Learn structural engineering, environmental engineering, and sustainable construction in our CE program.</p>
-            <button class="learn-more-button">View</button>
-        </div>
-    </div>
-
-
-        <!-- Footer Section -->
-<footer class="footer">
-    <div class="footer-content">
-        <!-- Important Links -->
-        <div class="footer-links">
-            <h3>Important Links</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">Admissions</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-        </div>
-
-        <!-- Map Section -->
-        <div class="footer-map">
-            <h3>Find Us Here</h3>
-            <img src="https://hcesonepat.org/hce/wp-content/uploads/2016/06/image-hce.jpg" alt="College Map">
-        </div>
-    </div>
-</footer>
-
-</body>
+		<div id="subjectModal" class="modal">
+			<div class="modal-content">
+				<span class="close-button">&times;</span>
+				<h3>Select Details</h3>
+				
+				<!-- Dropdowns for Year, Semester, and Subject -->
+				<div class="dropdown-container">
+					<select id="yearDropdown">
+						<option value="">Select Year</option>
+						<option value="1">1st Year</option>
+						<option value="2">2nd Year</option>
+						<option value="3">3rd Year</option>
+						<option value="4">4th Year</option>
+					</select>
+		
+					<select id="semesterDropdown">
+						<option value="">Select Semester</option>
+						<option value="1">Semester 1</option>
+						<option value="2">Semester 2</option>
+						<option value="3">Semester 3</option>
+						<option value="4">Semester 4</option>
+						<option value="5">Semester 5</option>
+						<option value="6">Semester 6</option>
+						<option value="7">Semester 7</option>
+						<option value="8">Semester 8</option>
+					</select>
+				</div>
+		
+				<!-- Search Button -->
+				<button id="searchButton" class="search-button">Search</button>
+				
+				<!-- Placeholder for Generated List -->
+				<div id="subjectList" class="subject-list"></div>
+			</div>
+		</div>
+		<script src="./scripts/syllabus-script.js"></script>
+	</body>
 </html>
