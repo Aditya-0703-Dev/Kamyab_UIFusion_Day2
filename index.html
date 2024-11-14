@@ -30,34 +30,34 @@
 			</div>
 		</div>
 
-    <!-- Links Section -->
-    <div class="buttons">
-        <a href="./index.html">
-            <button class="button">Home</button>
-        </a>
-        <a href="./under_construction.html">
-            <button class="button">Institution</button>
-        </a>
-        <a href="./under_construction.html">
-            <button class="button">Downloads</button>
-        </a>
-        <a href="./under_construction.html">
-            <button class="button">Datesheet</button>
-        </a>
-        <a href="./syllabus.html">
-            <button class="button">Programmes</button>
-        </a>
-        <a href="./entrepreneur.html">
-            <button class="button">Entrepreneurship</button>
-        </a>
-        <div class="dropdown">
-            <button class="button" onclick="toggleDropdown()">Login</button>
-            <div class="dropdown-menu" id="dropdownMenu">
-                <a href="./loginpage.html">Student Login</a>
-                <a href="./admin.html">Faculty Login</a>
-            </div>
-        </div>
-    </div>
+		<!-- Links Section -->
+		<div class="buttons">
+			<a href="./index.html">
+				<button class="button">Home</button>
+			</a>
+			<a href="./under_construction.html">
+				<button class="button">Institution</button>
+			</a>
+			<a href="./downloads.html">
+				<button class="button">Downloads</button>
+			</a>
+			<a href="./under_construction.html">
+				<button class="button">Datesheet</button>
+			</a>
+			<a href="./syllabus.html">
+				<button class="button">Programmes</button>
+			</a>
+			<a href="./entrepreneur.html">
+				<button class="button">Entrepreneurship</button>
+			</a>
+			<div class="dropdown">
+				<button class="button" onclick="toggleDropdown()">Login</button>
+				<div class="dropdown-menu" id="dropdownMenu">
+					<a href="./loginpage.html">Student Login</a>
+					<a href="./admin.html">Faculty Login</a>
+				</div>
+			</div>
+		</div>
 
 		<!-- Entrepreneurship Section -->
 		<section class="entrepreneurship-section">
@@ -161,16 +161,37 @@
 			<div class="modal-content">
 				<span class="close-button" onclick="closeModal()">&times;</span>
 				<h2>Contact Us</h2>
-				<p>Enter your contact details and we will contact you about the admission process!</p>
+				<p>
+					Enter your contact details and we will contact you about the admission
+					process!
+				</p>
 				<form id="contactForm">
 					<label for="name">Name:</label>
-					<input type="text" id="name" name="name" required placeholder="Name"/>
+					<input
+						type="text"
+						id="name"
+						name="name"
+						required
+						placeholder="Name"
+					/>
 
 					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required placeholder="Email"/>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						required
+						placeholder="Email"
+					/>
 
 					<label for="phone">Phone No:</label>
-					<input type="tel" id="phone" name="phone" required placeholder="Phone No"/>
+					<input
+						type="tel"
+						id="phone"
+						name="phone"
+						required
+						placeholder="Phone No"
+					/>
 
 					<button type="submit">Submit</button>
 				</form>
@@ -181,18 +202,17 @@
 			function openModal() {
 				document.getElementById("contactModal").style.display = "block";
 			}
-		
+
 			function closeModal() {
 				document.getElementById("contactModal").style.display = "none";
 			}
-		
+
 			// Close modal when clicking outside of it
-			window.onclick = function(event) {
+			window.onclick = function (event) {
 				if (event.target == document.getElementById("contactModal")) {
 					closeModal();
 				}
-			}
+			};
 		</script>
-		
 	</body>
 </html>
